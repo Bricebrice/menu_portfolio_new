@@ -1,0 +1,80 @@
+.clearfix:before,
+.clearfix:after {
+    content: "";
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
+.clearfix {
+    *zoom: 1;
+}
+
+html,
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.wrap {
+  text-align: center;
+}
+
+.container {
+  border: none;
+  display: inline-block;
+  width: 100%;
+  background-color: #F9F7F7
+}
+
+.button {
+    background-color: #F9F7F7;
+    color: black;
+    font-family: helvetica;
+    font-weight: bold;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    padding: 1rem 5rem;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.item {
+    display: none;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    font-family: helvetica;
+    font-size: 1rem;
+    background-color: #f9f9f9;
+    min-width: 10rem;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.1);
+}
+
+.item a {
+    color: black;
+    padding: 1rem 5rem;
+    text-decoration: none;
+    display: block;
+}
+
+.item a:hover {
+  background-color: #CED2DB;
+}
+
+.dropdown:hover .item {
+    display: block;
+}
+
+.dropdown:hover .button {
+    background-color: #B3B7BF;
+}
+
+.button:hover {
+    background-color: #B3B7BF;
+}
