@@ -1,3 +1,5 @@
+/*He añadido un Clearfix, sin embargo, es útil en este caso?*/
+
 .clearfix:before,
 .clearfix:after {
     content: "";
@@ -27,9 +29,11 @@ body{
   background-color: #F9F7F7
 }
 
+/*Cuando reduzco la ventana del navegador, el tamaño de Button cambia, a pesar de haber probado usando un height y weight fijo. No consigo establecer un valor fijo y responsive*/
 .button {
     background-color: #F9F7F7;
     color: black;
+/*Hay una carpeta con la font (brandon) que quiero usar pero no consigo vincularla*/
     font-family: helvetica;
     font-weight: bold;
     font-size: 0.9rem;
@@ -53,6 +57,7 @@ body{
     font-size: 1rem;
     background-color: #f9f9f9;
     min-width: 10rem;
+/*Aqui no uso Rem como unidad de medida, me he liado un poco probandolo y no sé si es una unidad que se aplica en todos los casos*/
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.1);
 }
 
